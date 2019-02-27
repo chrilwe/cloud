@@ -1,0 +1,30 @@
+spring:
+  profiles: 
+    active: 
+
+---
+
+server:
+  port: 8081
+spring:
+  profiles: dev
+  application:
+    name: appllication-dev
+
+---
+
+server:
+  port: 8082
+spring:
+  profiles: prod
+  application:
+    name: appllication-prod
+
+---
+
+server:
+  port: 8083
+spring:
+  profiles: test
+  application:
+    name: appllication-test
